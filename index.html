@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8dfe5" />
+    <meta
+      name="description"
+      content="Ümmühan'a özel, kalpten hazırlanmış romantik bir barışma mektubu."
+    />
+    <title>Aşkım, Bir Barışalım mı? ❤️</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="ambient-hearts" aria-hidden="true">
+        <span class="ambient-heart ambient-heart--one">♥</span>
+        <span class="ambient-heart ambient-heart--two">♥</span>
+        <span class="ambient-heart ambient-heart--three">♥</span>
+        <span class="ambient-heart ambient-heart--four">♥</span>
+        <span class="ambient-heart ambient-heart--five">♥</span>
+        <span class="ambient-heart ambient-heart--six">♥</span>
+      </div>
+
+      <header class="hero" id="top">
+        <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+        <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="eyebrow">kalbimden sana</p>
+          <h1>Merhaba aşkım... <span aria-hidden="true">❤️</span></h1>
+          <p class="hero__intro">
+            Sana anlatmak istediğim birkaç şey var. Bu kez kalbimden geçenleri
+            anlatmak istiyorum.
+          </p>
+          <button class="button button--primary hero__button" data-scroll-to="letter">
+            Benim için aç <span aria-hidden="true">❤️</span>
+          </button>
+          <p class="hero__hint">Hazırsan, küçük bir kalp yolculuğuna çıkalım.</p>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span></span></div>
+      </header>
+
+      <main>
+        <section class="section letter-section" id="letter" aria-labelledby="letter-title">
+          <div class="section-heading">
+            <p class="eyebrow">sana söylemek istediklerim</p>
+            <h2 id="letter-title">Kalbimden bir mektup</h2>
+            <p>İstersen zarfı aç. İçindeki her kelime sana, Ümmühan'a.</p>
+          </div>
+
+          <div class="letter-wrap">
+            <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="letter-paper">
+              <span class="envelope__back"></span>
+              <span class="envelope__paper" id="letter-paper">
+                <span class="letter-paper__content">
+                  <span class="letter-paper__title">Aşkım...</span>
+                  <span>
+                    Bazen istemeden birbirimizi kırabiliyoruz. Ben de hatalar
+                    yaptım, belki seni üzdüm. Seni kırdığım anlar için gerçekten
+                    özür dilerim.
+                  </span>
+                  <span>
+                    Amacım tartışmalarda haklı çıkmak değil, birbirimizi anlamak.
+                    Bazen söylemem gerekenleri doğru şekilde ifade edememiş
+                    olabilirim.
+                  </span>
+                  <span>
+                    Ama bilmeni istiyorum ki sen benim için çok değerlisin. Seni
+                    üzmek değil, mutlu etmek istiyorum.
+                  </span>
+                  <span>
+                    Her şeyin eskisinden daha güzel olması için ben de üzerime
+                    düşeni yapmaya hazırım.
+                  </span>
+                  <span>Seni seviyorum aşkım. <span aria-hidden="true">❤️</span></span>
+                </span>
+              </span>
+              <span class="envelope__front"></span>
+              <span class="envelope__flap"></span>
+              <span class="envelope__seal" aria-hidden="true">♥</span>
+              <span class="envelope__label">Dokun ve aç</span>
+            </button>
+            <p class="interaction-note" id="envelope-note">Kapalı bir mektup, açık bir kalp.</p>
+          </div>
+        </section>
+
+        <section class="section music-section" aria-labelledby="music-title">
+          <div class="section-heading section-heading--compact">
+            <p class="eyebrow">istersen birlikte dinleriz</p>
+            <h2 id="music-title">Sana özel bir şarkı</h2>
+            <p>Klasördeki şarkı, mektubu açtığında senin için çalmaya başlayacak.</p>
+          </div>
+          <div class="music-card">
+            <div class="music-card__icon" aria-hidden="true">♫</div>
+            <div class="music-card__body">
+              <p class="music-card__filename" id="song-name">Sana özel şarkı hazır.</p>
+              <audio id="song-player" controls preload="metadata" aria-label="Sana özel şarkı oynatıcı"></audio>
+              <p class="status-text" id="song-status" role="status">Mektubu açtığında şarkı başlayacak.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section memories-section" id="memories" aria-labelledby="memories-title">
+          <div class="section-heading">
+            <p class="eyebrow">bizden kalan güzel şeyler</p>
+            <h2 id="memories-title">Bizim anılarımız</h2>
+            <p>Dört küçük çerçeve, içine senin en güzel anıların gelecek.</p>
+          </div>
+          <div class="gallery" id="gallery">
+            <button class="polaroid polaroid--tilt-left" type="button" data-image="assets/images/foto1.jpg" data-caption="Gülüşünün içimi ısıttığı o güzel an.">
+              <span class="polaroid__image-wrap">
+                <img src="assets/images/foto1.jpg" alt="Birlikte güzel bir anı - Fotoğraf 1" loading="lazy" />
+                <span class="image-placeholder"><span>fotoğrafını<br />buraya ekle</span><small>foto1.jpg</small></span>
+              </span>
+              <span class="polaroid__caption">Gülüşünün içimi ısıttığı o güzel an.</span>
+              <span class="polaroid__heart" aria-hidden="true">♥</span>
+            </button>
+            <button class="polaroid polaroid--tilt-right" type="button" data-image="assets/images/foto2.jpg" data-caption="Yan yana olduğumuzda dünya biraz daha güzel.">
+              <span class="polaroid__image-wrap">
+                <img src="assets/images/foto2.jpg" alt="Birlikte güzel bir anı - Fotoğraf 2" loading="lazy" />
+                <span class="image-placeholder"><span>fotoğrafını<br />buraya ekle</span><small>foto2.jpg</small></span>
+              </span>
+              <span class="polaroid__caption">Yan yana olduğumuzda dünya biraz daha güzel.</span>
+              <span class="polaroid__heart" aria-hidden="true">♥</span>
+            </button>
+            <button class="polaroid polaroid--tilt-small-left" type="button" data-image="assets/images/foto3.jpg" data-caption="Hatırladıkça yüzümde beliren o tatlı gülümseme.">
+              <span class="polaroid__image-wrap">
+                <img src="assets/images/foto3.jpg" alt="Birlikte güzel bir anı - Fotoğraf 3" loading="lazy" />
+                <span class="image-placeholder"><span>fotoğrafını<br />buraya ekle</span><small>foto3.jpg</small></span>
+              </span>
+              <span class="polaroid__caption">Hatırladıkça yüzümde beliren o tatlı gülümseme.</span>
+              <span class="polaroid__heart" aria-hidden="true">♥</span>
+            </button>
+            <button class="polaroid polaroid--tilt-small-right" type="button" data-image="assets/images/foto4.jpg" data-caption="Birlikte biriktireceğimiz nice güzel zamana.">
+              <span class="polaroid__image-wrap">
+                <img src="assets/images/foto4.jpg" alt="Birlikte güzel bir anı - Fotoğraf 4" loading="lazy" />
+                <span class="image-placeholder"><span>fotoğrafını<br />buraya ekle</span><small>foto4.jpg</small></span>
+              </span>
+              <span class="polaroid__caption">Birlikte biriktireceğimiz nice güzel zamana.</span>
+              <span class="polaroid__heart" aria-hidden="true">♥</span>
+            </button>
+          </div>
+          <p class="section-footnote">Fotoğraflara dokunarak büyütebilirsin.</p>
+        </section>
+
+        <section class="section gift-section" aria-labelledby="gift-title">
+          <div class="section-heading section-heading--compact">
+            <p class="eyebrow">galerinin ardından küçük bir sürpriz</p>
+            <h2 id="gift-title">Sana sakladığım bir şey var</h2>
+            <p>Hazır olduğunda kutuya dokun. Açmak zorunda değilsin.</p>
+          </div>
+          <button class="gift-box" id="gift-box" type="button" aria-expanded="false" aria-controls="gift-message">
+            <span class="gift-box__lid"><span class="gift-box__bow">♡</span></span>
+            <span class="gift-box__body"><span class="gift-box__ribbon"></span></span>
+            <span class="gift-box__shine" aria-hidden="true">✦</span>
+            <span class="gift-box__label">sürprizi aç</span>
+          </button>
+          <div class="gift-message" id="gift-message" role="status" hidden>
+            <span class="gift-message__heart" aria-hidden="true">♥</span>
+            <p>Seninle ilgili en güzel şey, kalbimin yanında kendisi gibi hissedebilmesi. İyi ki varsın aşkım.</p>
+          </div>
+        </section>
+
+        <section class="section counter-section" aria-labelledby="counter-title">
+          <div class="section-heading">
+            <p class="eyebrow">20 Şubat 2026'dan beri</p>
+            <h2 id="counter-title">Seninle geçen her saniye benim için değerli aşkım.</h2>
+          </div>
+          <div class="counter" id="counter" aria-label="Birlikte geçen süre">
+            <div class="counter__item"><strong data-time="days">0</strong><span>gün</span></div>
+            <div class="counter__divider" aria-hidden="true">·</div>
+            <div class="counter__item"><strong data-time="hours">0</strong><span>saat</span></div>
+            <div class="counter__divider" aria-hidden="true">·</div>
+            <div class="counter__item"><strong data-time="minutes">0</strong><span>dakika</span></div>
+            <div class="counter__divider" aria-hidden="true">·</div>
+            <div class="counter__item"><strong data-time="seconds">0</strong><span>saniye</span></div>
+          </div>
+        </section>
+
+        <section class="section love-section" aria-labelledby="love-title">
+          <div class="section-heading section-heading--compact">
+            <p class="eyebrow">aklımdan geçenlerden biri</p>
+            <h2 id="love-title">Seni neden seviyorum?</h2>
+            <p>Her dokunuşta kalbimden başka bir cevap seçilsin.</p>
+          </div>
+          <button class="button button--outline love-button" id="love-button" type="button">
+            Bir neden daha söyle <span aria-hidden="true">♡</span>
+          </button>
+          <p class="love-answer" id="love-answer" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="section final-section" id="finale" aria-labelledby="final-title">
+          <div class="final-section__lights" aria-hidden="true"></div>
+          <div class="final-section__content">
+            <p class="eyebrow">son bir şey söylemeden önce</p>
+            <blockquote>
+              “Aşkım, senden mükemmel olmanı istemiyorum. Sadece birbirimizi
+              anlamaya çalışalım istiyorum. Çünkü benim için sen, bütün
+              tartışmalardan daha değerlisin.”
+            </blockquote>
+            <div class="final-divider" aria-hidden="true"><span>♥</span></div>
+            <h2 id="final-title">Aşkım, benimle barışır mısın? <span aria-hidden="true">❤️</span></h2>
+            <p>Her şeyi yeniden güzelleştirmek için bir şansımız olsun mu? Seni dinlemeye, anlamaya ve hatalarımı düzeltmeye hazırım.</p>
+            <div class="final-actions">
+              <button class="button button--primary" id="yes-button" type="button">Evet, barışalım <span aria-hidden="true">❤️</span></button>
+              <button class="button button--soft" id="thinking-button" type="button">Biraz düşünmem lazım</button>
+            </div>
+            <div class="final-response" id="final-response" role="status" aria-live="polite" hidden></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Kalpten hazırlandı, sana özel. <span aria-hidden="true">♥</span></p>
+        <a href="#top">başa dön</a>
+      </footer>
+    </div>
+
+    <div class="modal" id="image-modal" role="dialog" aria-modal="true" aria-labelledby="modal-caption" hidden>
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__panel">
+        <button class="modal__close" type="button" aria-label="Büyük fotoğrafı kapat" data-close-modal>×</button>
+        <img id="modal-image" src="" alt="" />
+        <p id="modal-caption"></p>
+      </div>
+    </div>
+
+    <div class="message-modal" id="heart-message-modal" role="dialog" aria-modal="true" aria-labelledby="heart-message-title" hidden>
+      <div class="message-modal__backdrop" data-close-heart-modal></div>
+      <div class="message-modal__panel">
+        <button class="modal__close" type="button" aria-label="Mesajı kapat" data-close-heart-modal>×</button>
+        <span class="message-modal__icon" aria-hidden="true">♥</span>
+        <p class="eyebrow">gizli bir kalp buldun</p>
+        <h2 id="heart-message-title">Sana küçük bir not</h2>
+        <p id="heart-message-text"></p>
+      </div>
+    </div>
+
+    <div class="hidden-hearts" aria-label="Gizli romantik mesajlar">
+      <button class="hidden-heart hidden-heart--one" type="button" data-heart-message="Sen gülünce, içimde bütün güzel şeyler aynı anda oluyor. ❤️" aria-label="Gizli mesajı aç">♥</button>
+      <button class="hidden-heart hidden-heart--two" type="button" data-heart-message="Sana her baktığımda, seni seçtiğim için bir kez daha şükrediyorum. ❤️" aria-label="Gizli mesajı aç">♥</button>
+      <button class="hidden-heart hidden-heart--three" type="button" data-heart-message="Kalbimdeki en yumuşak yerin sahibi sensin, Ümmühan. ❤️" aria-label="Gizli mesajı aç">♥</button>
+      <button class="hidden-heart hidden-heart--four" type="button" data-heart-message="Ne olursa olsun, seni anlamak ve yanında olmak istiyorum. ❤️" aria-label="Gizli mesajı aç">♥</button>
+      <button class="hidden-heart hidden-heart--five" type="button" data-heart-message="İyi ki hayatımdasın aşkım. Hikâyemizin güzel tarafı daha çok olsun. ❤️" aria-label="Gizli mesajı aç">♥</button>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
